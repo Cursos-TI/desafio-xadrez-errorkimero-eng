@@ -4,6 +4,18 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
+//meu código recursivo
+void moverTorre(int casas)
+{
+    if (casas == 0)
+    {
+        return;
+    }
+
+    printf("Direita\n");
+    moverTorre(casas - 1);
+}
+
 int main() {
 
     
@@ -95,6 +107,11 @@ for(int i = 1; i <= 1; i++)
 }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
+    printf("*****Torre Recursiva*****\n");
+moverTorre(5);
+    
+    
+    
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
 
